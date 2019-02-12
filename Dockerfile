@@ -1,3 +1,4 @@
-FROM openjdk:8u92-jdk-alpine
+FROM openjdk:8u181-jre-stretch
 MAINTAINER liuwei
-RUN apk update && apk add python3
+RUN apt-get update && apt-get install python3
+RUN pip3 install numpy 
